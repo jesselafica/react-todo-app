@@ -51,7 +51,7 @@ var Checklist = React.createClass({
 
     return (
       <div className="row">
-        <div className="column medium-6 large-4 small-centered">
+        <div className="column medium-6 large-6 small-centered">
           <h2 className="text-center">Checklist</h2>
           <Form onSubmit={this.handleSubmit} />
           <ul className="checklist">
