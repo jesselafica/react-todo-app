@@ -1,0 +1,43 @@
+.checklist {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative;
+
+  &::after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.remove-item {
+  background-color: #ff4d4d;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 1px #ff8080;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  height: 26px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+
+  &:hover {
+    background-color: #ee2b2b;
+  }
+}
